@@ -20,10 +20,7 @@ function tabuada(){
         const text = document.createTextNode (` ${numero + " x " +  i + " = " + result}`);
         node.appendChild(text);
         divisoria.appendChild(node);
-
-
     }
-
 }
 
 function textoH(){
@@ -36,7 +33,6 @@ function textoH(){
         node.appendChild(text);
         divisoria.appendChild(node);
     }
-
 }
 
 let click = 0;
@@ -45,7 +41,6 @@ function contaClique(){
     document.getElementById("clique").innerHTML = click;
 }
 
-
 function sorteador(){
     let sorteador = document.getElementById("sorteador");
     sorteio.innerHTML = Math.floor(11 * Math.random());
@@ -53,8 +48,8 @@ function sorteador(){
 }
 
 function sorteador2(){
-    let entre = document.getElementById("entre").value;
-    let ate = document.getElementById("ate").value;
-    let sorteador2 = document.getElementById("sorteador2");
-    sorteador2.innerHTML = Math.floor(ate * Math.random(entre));
+    let entre = parseInt(document.getElementById('entre').value);
+    let ate = parseInt(document.getElementById('ate').value);
+    let sorteador2 = parseInt((Math.random()*(ate - entre +1)+ entre));
+    document.getElementById('sorteador2').innerHTML = `O valor sorteado é ${sorteador2}`;   
 }
