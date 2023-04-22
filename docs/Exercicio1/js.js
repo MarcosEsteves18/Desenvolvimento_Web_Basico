@@ -34,3 +34,11 @@ function getNome(){
   
 
 };   
+
+function todos(){
+    getNome();
+    getCheckBox();
+    getDate();
+    displayRadioValue();
+
+}
