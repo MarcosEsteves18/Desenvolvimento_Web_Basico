@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/aula5.js"></script>
+    <title>Aula 6</title>
+</head>
+<body>
+    <div>
+        <h1>Interação com JS</h1>
+        <div>
+            <h2>Tabuada</h2>
+            <!-- 
+            Desenvolva uma pagina HTML que receba um numero e exiba a tabuada do mesmo 
+            -->
+            <Label for="numero">Digite um numero </Label>   
+            <input type="number"  id="numero">
+            <button onclick="tabuada()">Exibir tabuada</button>
+            <div id="resultab"></div>
+        </div>
+        <div>
+            <!--
+                desenvolva uma agina html que receba um valor a pagina deve imprimir a mesma quantidade de h1
+                com o texto "texto h1". 
+                exemplo : usuario digita 10, imprime 10 h1
+            -->
+            <h2>Texto h1</h2>
+            <label for="numero2">Digite um numero </label>
+            <input type="number" id="numero2">
+            <button onclick="textoH()">Exiba a quantidade de vezes h1</button>
+            <div id="result2"></div>
+        </div>
+
+        <div>
+            <!--
+                Desenvolva um botao contador de cliques deve exibir quantos cliques o botao receber
+            -->
+            <h2>Contador de clicks</h2>
+            <button onclick="contaClique()">Clique Aqui</button>
+            <p>
+                Este botao rebeceu 
+                <span id="clique">0</span> Cliques.
+            </p>
+        </div>
+        <div>
+            <h2>Sorteador de numeros</h2>
+            <button  onclick="sorteador()">Clique Aqui para gerar um numero sorteado</button>
+            <span id="sorteio">0</span> NUMERO GANHADOR
+
+
+        </div>
+        <div>
+            <h2>Sorteador de numeros que voce escolhe </h2>
+            
+            <label for="entre">Numero entre: </label>
+            <input type="number" id="entre">
+            <label for="ate">Ate: </label>
+            <input type="number" id="ate">
+            <button  onclick="sorteador2()">Clique Aqui para gerar um numero sorteado</button>
+            <p id="sorteador2"></p>
+            
+
+
+        </div>
+
+
+    </div>
+</body>
+</html>
